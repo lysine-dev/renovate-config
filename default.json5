@@ -4,6 +4,7 @@
     'config:recommended',
     'group:monorepos',
     'group:recommended',
+    'helpers:pinGitHubActionDigestsToSemver',
   ],
   semanticCommits: 'disabled',
   ignorePresets: [
