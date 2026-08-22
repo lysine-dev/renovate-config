@@ -27,4 +27,25 @@
       extractVersionTemplate: '^(?<version>\\d+)',
     },
   ],
+  packageRules: [
+    {
+      matchUpdateTypes: [
+        'major',
+        'minor',
+        'patch'
+      ],
+      // Default to 7 day dependency cooldowns.
+      minimumReleaseAge: '7 days',
+    },
+    {
+      "matchPackageNames": [
+        '/app.cash.sqldelight.*/',
+        '/com.squareup.okhttp3.*/',
+        '/com.squareup.okio.*/',
+        '/com.squareup.retrofit2.*/',
+      ],
+      // No dependency cooldowns for lysine.dev projects.
+      minimumReleaseAge: '0 days',
+    }
+  ]
 }
