@@ -39,10 +39,11 @@
     },
     {
       "matchPackageNames": [
-        '/app.cash.sqldelight.*/',
-        '/com.squareup.okhttp3.*/',
-        '/com.squareup.okio.*/',
-        '/com.squareup.retrofit2.*/',
+        '/app[.]cash[.]sqldelight.*/',
+        '/com[.]squareup[.]okhttp3.*/',
+        '/com[.]squareup[.]okio.*/',
+        '/com[.]squareup[.]retrofit2.*/',
+        '/dev[.]lysine.*/',
       ],
       // No dependency cooldowns for lysine.dev projects.
       minimumReleaseAge: '0 days',
